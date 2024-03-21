@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap";
+
+html,
+body {
+    height: 100%;
+}
+
+#my-main-nav {
+    width: 16rem;
+    top: 0;
+}
+
+#my-main-ul-wrapper {
+    width: 16rem;
+}
+
+#my-main-nav ul a:hover {
+    background-color: $gray-600;
+}
+
+@include media-breakpoint-up(lg) {
+    #my-main-nav.my-main-nav-hidden {
+        transform: translateX(-100%);
+        position: fixed;
+    }
+}
