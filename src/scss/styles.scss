@@ -14,7 +14,7 @@ body {
     width: 16rem;
 }
 
-#my-main-nav ul a:hover {
+#my-main-nav ul a:hover, #my-main-nav ul a.my-active {
     background-color: $gray-600;
 }
 
@@ -38,4 +38,8 @@ body {
     height: 1em;
     display: inline-block;
     fill: currentColor;
+}
+
+.accordion {
+    --bs-accordion-bg: none;
 }
