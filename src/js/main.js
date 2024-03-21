@@ -8,6 +8,9 @@ import '../scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
-document.getElementById('my-main-nav-toggler').addEventListener('click', function() {
-    document.getElementById('my-main-nav').classList.toggle('my-main-nav-hidden');
-});
+const myMainNavToggler = document.getElementById('my-main-nav-toggler');
+if (myMainNavToggler) {
+    myMainNavToggler.addEventListener('click', function() {
+        document.getElementById('my-main-nav').classList.toggle('my-main-nav-hidden');
+    });
+}
