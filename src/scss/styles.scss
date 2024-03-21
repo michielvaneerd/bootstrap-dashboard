@@ -24,3 +24,18 @@ body {
         position: fixed;
     }
 }
+
+// Take over the padding from the accordion items because we display them in the main nav as well.
+#my-main-ul-wrapper .nav-link {
+    padding-top: $accordion-padding-y !important;
+    padding-bottom: $accordion-padding-y !important;
+    padding-left: $accordion-padding-x !important;
+    padding-right: $accordion-padding-x !important;
+}
+
+.my-svg-icon {
+    width:1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+}
